@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:baselineAligned="false"
+       android:orientation="vertical" >
+       
+		<include layout="@layout/fragment_dados_base_pessoa"/>
+		
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/defaultTextView"
+		    android:text="@string/numero_implurb"/>
+		<EditText 
+		    android:id="@+id/edNumeroImplurb"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:inputType="number"
+		    android:hint="@string/numero_implurb"/>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:baselineAligned="false">
+		    <LinearLayout 
+		        android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="2">
+				<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    style="@style/defaultTextView"
+				    android:text="@string/tipo_banca" />
+
+				<Spinner
+				    android:id="@+id/spTipoAtividade"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center" />
+
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_weight="1">
+			  	<TextView
+			  	    android:layout_width="match_parent"
+			  	    android:layout_height="wrap_content"
+			  	    android:gravity="center"
+			  	    style="@style/defaultTextView"
+			  	    android:text="@string/numero_banca" />
+
+		        <Spinner
+		            android:id="@+id/spNumeroBanca"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center" />
+
+     	   </LinearLayout>
+       </LinearLayout>
+		<Button 
+		    android:id="@+id/btSalvar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    style="@style/defaultMenuButtom"
+		    android:text="@string/salvar"/>
+	</LinearLayout>		    
+</ScrollView>

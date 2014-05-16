@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.com.easymanager.CadastroAuxiliarActivity" >
+
+   <item android:id="@+id/imAdicionaAuxiliar"
+       android:showAsAction="always"
+       android:icon="@drawable/ic_receber"
+       android:title="@string/add_auxiliar"/>
+   <item 
+	    android:showAsAction="always"
+	    android:icon="@drawable/ic_opcoes"
+	    android:title="@string/mais_opcoes">
+	    <menu>
+			<item 
+			    android:id="@+id/imAddTelefone"
+			    android:title="@string/add_telefone"/>
+			<item 
+			    android:id="@+id/imAddEndereco"
+			    android:title="@string/add_endereco"/>
+		</menu>
+	</item>
+
+</menu>

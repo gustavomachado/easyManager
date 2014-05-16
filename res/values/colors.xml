@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="titulo1">#577</color>
+    <color name="titulo2">#022</color>
+    <color name="texto_normal">#222</color>
+    
+    <color name="background_activity_1">#022</color>
+    <color name="background_activity_2">#acc</color>
+    
+</resources>

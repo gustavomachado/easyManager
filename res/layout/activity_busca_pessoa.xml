@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="org.com.easymanager.view.activities.BuscaPessoaBancaActivity"
+    tools:ignore="MergeRootFrame" >
+     <FrameLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="0dp"
+   	    android:layout_weight="1">
+		<fragment
+	        android:id="@+id/frag_activity_main"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        class="org.com.easymanager.view.fragments.FragmentBuscaPessoa"
+	        tools:layout="@layout/fragment_busca_pessoa" />
+   	</FrameLayout>
+   
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources 
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="titulo2">
+       	<item name="android:textSize">8pt</item>
+       	<item name="android:textColor">@color/titulo2</item>
+       	<item name="android:textStyle">bold</item>
+ 	</style>
+	
+</resources>

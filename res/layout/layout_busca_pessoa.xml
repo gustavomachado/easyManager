@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       style="@style/titulo2"
+       android:text="@string/busca_selecao"/>
+   <org.com.easymanager.view.custumers.layouts.RadioButtonGridLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/loGridRadio">
+	   <TableRow >
+		   <RadioButton 
+		       android:id="@+id/cbNomeEmpreendedor"
+		       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       style="@style/defaultTextView"
+		       android:checked="false"
+		       android:text="@string/nome_busca"/>
+			<RadioButton 
+		       android:id="@+id/cbCPFEmpreendedor"
+		       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       style="@style/defaultTextView"
+		       android:checked="false"
+		       android:text="@string/cpf_busca"/>
+		</TableRow>
+		<TableRow >
+			<RadioButton 
+		       android:id="@+id/cbRGEmpreendedor"
+		       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:text="@string/rg_busca"
+		       style="@style/defaultTextView"
+		       android:checked="false"/>
+			<RadioButton 
+		       android:id="@+id/cbNumeroBanca"
+		       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       style="@style/defaultTextView"
+		       android:layout_weight="1"
+		       android:checked="false"
+		       android:text="@string/numero_banca"/>
+		</TableRow>
+		<TableRow >
+			<RadioButton 
+		       android:id="@+id/cbNumeroImplurb"
+		       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       style="@style/defaultTextView"
+		       android:layout_weight="1"
+		       android:checked="false"
+		       android:text="@string/num_implurb_busca"/>
+		</TableRow>
+	</org.com.easymanager.view.custumers.layouts.RadioButtonGridLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/faca_busca"/>
+	<EditText 
+	    android:id="@+id/edValorParaBusca"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/defaultTextView"
+	    android:hint="@string/valor_busca"/>
+   <ListView 
+       android:id="@+id/lvResultado"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+   </ListView>
+</LinearLayout>

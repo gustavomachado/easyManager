@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	tools:context="org.com.easymanager.view.activities.CadastroEmpreendedorActivity" >
+	
+	<item 
+	    android:showAsAction="always"
+	    android:icon="@drawable/ic_opcoes"
+	    android:title="@string/mais_opcoes">
+	    <menu>
+			<item 
+			    android:id="@+id/imAddTelefone"
+			    android:title="@string/add_telefone"/>
+			<item 
+			    android:id="@+id/imAddEndereco"
+			    android:title="@string/add_endereco"/>
+			<item 
+			    android:id="@+id/imAddAuxiliar"
+			    android:title="@string/add_auxiliar"/>
+			<item 
+			    android:id="@+id/imListarAuxiliares"
+			    android:title="@string/lista_auxiliares"/>
+		</menu>
+	</item>
+</menu>

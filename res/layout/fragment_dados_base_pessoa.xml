@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView 
+			android:id="@+id/ivFotoPessoa"
+			android:layout_width="171dp"
+			android:layout_height="95dp"
+			android:src="@drawable/ic_add_image"
+			android:contentDescription="@string/foto_pessoa"/>
+       <ImageView 
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:src="@drawable/separator"
+           android:contentDescription="@string/separator"/>
+    <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/nome_cadastro"
+		   	style="@style/defaultTextView"/>
+		<EditText 
+		    android:id="@+id/edNomePessoa"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textAlignment="viewStart"
+		    android:hint="@string/nome_hint"/>
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/defaultTextView"
+		    android:text="@string/rg_cadastro"/>
+		<EditText 
+		    android:id="@+id/edRgPessoa"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:inputType="number"
+		    android:hint="@string/rg_hint"/>
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/defaultTextView"
+		    android:text="@string/cpf_cadastro"/>
+		<EditText 
+		    android:id="@+id/edCPFPessoa"
+		    android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:inputType="number"
+		    android:maxLength="11"
+		    android:hint="@string/cpf_hint"/>
+
+</LinearLayout>
