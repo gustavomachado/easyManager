@@ -1,4 +1,4 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources>
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -15,34 +15,6 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-       
-        <item name="android:textColor">@color/titulo1</item>
     </style>
-   	<style name="titulo1">
-       	<item name="android:textSize">12pt</item>
-      	<item name="android:textColor">@color/titulo1</item>
-		<item name="android:textStyle">bold</item>
- 	</style>
- 	
-     <style name="titulo2">
-       	<item name="android:textSize">10pt</item>
-       	<item name="android:textColor">@color/titulo2</item>
-       	<item name="android:textStyle">bold</item>
- 	</style>
-	
-    <style name="titulo3">
-        <item name="android:textSize">6pt</item>
-       	<item name="android:textColor">#ddd</item>
-       	<item name="android:textStyle">bold</item>
- 	</style>
- 	<style name="defaultTextView">
- 	    <item name="android:textSize">20sp</item>
- 	    <item name="android:textColor">@color/titulo1</item>
- 	</style>
- 	<style name="defaultMenuButtom">
- 	    <item name="android:textColor">@color/texto_normal</item>
- 	    <item name="android:background">@drawable/round_cornners</item>
- 	    <item name="android:textStyle">bold</item>
- 	</style>
-  
+
 </resources>

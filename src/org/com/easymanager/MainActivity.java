@@ -1,9 +1,4 @@
-package org.com.easymanager.view.activities;
-
-import org.com.easymanager.R;
-import org.com.easymanager.R.id;
-import org.com.easymanager.R.layout;
-import org.com.easymanager.R.menu;
+package org.com.easymanager;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -16,24 +11,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class ListaBancas extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-//		if (savedInstanceState == null) {
-//			getSupportFragmentManager().beginTransaction()
-//					.add(R.id.container, new PlaceholderFragment()).commit();
-//		}
+		if (savedInstanceState == null) {
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.container, new PlaceholderFragment()).commit();
+		}
 	}
-/*
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.lista_bancas, menu);
+		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
@@ -51,7 +46,7 @@ public class ListaBancas extends ActionBarActivity {
 
 	/**
 	 * A placeholder fragment containing a simple view.
-	 *
+	 */
 	public static class PlaceholderFragment extends Fragment {
 
 		public PlaceholderFragment() {
@@ -60,10 +55,10 @@ public class ListaBancas extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_lista_bancas,
-					container, false);
+			View rootView = inflater.inflate(R.layout.fragment_main, container,
+					false);
 			return rootView;
 		}
 	}
-*/
+
 }

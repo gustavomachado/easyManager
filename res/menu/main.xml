@@ -3,43 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="org.com.easymanager.MainActivity" >
 
-    <item 
-        android:title="@string/menu_novo"
-       	app:showAsAction="always"
-        >
-        <menu >
-            <item 
-                android:id="@+id/action_novoMicroempreendedor"
-                android:title="@string/menu_novo_micro_empreendedor"/>
-            <item 
-                android:id="@+id/action_novoAuxiliar"
-                android:title="@string/menu_novo_auxiliar"/>
-		</menu>    
-    </item>
-   <item 
-       android:title="@string/menu_editar"
-       app:showAsAction="always">
-        <menu >
-            <item 
-                android:id="@+id/action_editarMicroempreendedor"
-                android:title="@string/menu_novo_micro_empreendedor"/>
-            <item 
-                android:id="@+id/action_editarAuxiliar"
-                android:title="@string/menu_novo_auxiliar"/>
-            <item 
-                android:id="@+id/action_editarBanca"
-                android:title="@string/menu_novo_banca"/>
-        </menu>
-    </item>
-    <item 
-        android:id="@+id/action_sair"
-        android:orderInCategory="100"
-        android:title="@string/sair"
-        android:showAsAction="never"/>
-  	<item
+    <item
         android:id="@+id/action_settings"
+        android:orderInCategory="100"
         android:title="@string/action_settings"
-        android:showAsAction="never"/>
-   
- 
+        app:showAsAction="never"/>
+
 </menu>
